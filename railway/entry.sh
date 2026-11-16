@@ -11,5 +11,6 @@ if [ -z "${ROCKETRIDE_APIKEY:-}" ]; then
 else
   echo "railway: engine API key auth is ON (ROCKETRIDE_APIKEY)"
 fi
+export HOME=/home/rocketride USER=rocketride
 cd /opt/rocketride
 exec setpriv --reuid=1000 --regid=1000 --init-groups ./engine ./ai/eaas.py --host=0.0.0.0 --port="${ROCKETRIDE_PORT:-8080}" "$@"
