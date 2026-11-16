@@ -24,10 +24,10 @@ Baked into the image: `ROCKETRIDE_PORT=8080`, `ROCKETRIDE_LOG_LEVEL=info`.
 ## How to use
 
 1. Deploy, then copy `ROCKETRIDE_APIKEY` from rocketride → Variables.
-2. Open the public domain and enter the key when the UI asks for it. Alternatively, point the **RocketRide VS Code extension** or an SDK at `https://<your-domain>` with that key:
+2. Open the public domain and enter the key when the UI asks for it. Alternatively, point the **RocketRide VS Code extension** or an SDK at `wss://<your-domain>` with that key:
    ```python
    from rocketride import RocketRideClient
-   client = RocketRideClient(uri="https://<your-domain>", auth="<ROCKETRIDE_APIKEY>")
+   client = RocketRideClient(uri="wss://<your-domain>", auth="<ROCKETRIDE_APIKEY>")
    ```
 3. Add your model provider keys (OpenAI, Anthropic, Gemini, Ollama…) in the pipeline nodes that need them. The engine itself needs none of them to start.
 4. In pgvector store nodes, use host `pgvector.railway.internal`, port `5432`, user `postgres`, database `postgres` and the pgvector service's `POSTGRES_PASSWORD`.
