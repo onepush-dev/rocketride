@@ -2,7 +2,7 @@
 
 [RocketRide](https://github.com/rocketride-org/rocketride-server) (MIT) is an open-source AI pipeline engine. You build pipelines from 50+ nodes: LLMs, embeddings, OCR, parsers, chunkers, vector stores and agents. You run them from the browser UI, the VS Code extension, the Python/TypeScript SDKs or MCP clients. This template deploys the engine on Railway with one click, with a pgvector database alongside.
 
-[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/deploy/TEMPLATE_CODE)
+[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/deploy/SIT4vM)
 
 ## What this template runs
 
